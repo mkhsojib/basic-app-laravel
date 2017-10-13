@@ -6,6 +6,6 @@
 
 
 @section('sidebar')
-@parent
+
 
 @endsection
