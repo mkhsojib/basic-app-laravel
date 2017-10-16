@@ -37,4 +37,20 @@ return redirect('/')->with('success', 'Message sent');
 
 
     }
+
+
+    public function getMessages(){
+
+
+      $messages = Message::orderBy('id', 'DESC')->get();
+
+
+      return view('messages')->with('messages', $messages);
+
+
+
+
+
+
+    }
 }
